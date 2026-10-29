@@ -1,0 +1,7 @@
+{
+  "abilities": [
+    {"id":"eco", "name":"Pulso do vazio", "description":"Dano dimensional a até quatro casas. Explora fraquezas e rompe a postura.", "cost":8, "range":4, "power":30, "type":"dimensional"},
+    {"id":"pulso", "name":"Pulso elétrico", "description":"Descarga tecnológica a até quatro casas.", "cost":8, "range":4, "power":30, "type":"electrical"},
+    {"id":"cura", "name":"Estabilizar", "description":"Lia recupera 30 pontos de vida de um aliado a até cinco casas.", "cost":10, "range":5, "power":30, "type":"healing"}
+  ]
+}

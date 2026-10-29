@@ -1,0 +1,23 @@
+apply plugin: 'application'
+application {
+    mainClass = 'ruptura.desktop.DesktopLauncher'
+    applicationName = 'Ruptura'
+    applicationDefaultJvmArgs = ['-Dfile.encoding=UTF-8']
+}
+dependencies {
+    implementation project(':core')
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    runtimeOnly "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    runtimeOnly "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+}
+tasks.named('run', JavaExec) {
+    workingDir = rootProject.projectDir
+    if (System.getProperty('os.name').toLowerCase().contains('mac')) jvmArgs '-XstartOnFirstThread'
+    if (project.hasProperty('gameArgs')) args project.property('gameArgs').split(' ')
+}
+distributions.main.contents {
+    from(rootProject.file('README.md'))
+    from(rootProject.file('THIRD_PARTY_NOTICES.md'))
+    into('docs') { from(rootProject.file('docs')) }
+    into('licenses') { from(rootProject.file('assets/fonts')) { include '*.txt' } }
+}

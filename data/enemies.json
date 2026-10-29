@@ -1,0 +1,8 @@
+{
+  "enemies": [
+    {"id":"errante", "name":"Errante", "hp":46, "energy":0, "attack":16, "defense":5, "speed":8, "move":2, "range":1, "weakness":"electrical"},
+    {"id":"corredor", "name":"Corredor", "hp":38, "energy":12, "attack":17, "defense":3, "speed":16, "move":4, "range":1, "weakness":"dimensional"},
+    {"id":"estilhacado", "name":"Estilhaçado", "hp":68, "energy":20, "attack":20, "defense":10, "speed":10, "move":2, "range":3, "weakness":"dimensional"},
+    {"id":"sussurrante", "name":"Sussurrante", "hp":134, "energy":40, "attack":22, "defense":9, "speed":11, "move":3, "range":3, "weakness":"electrical"}
+  ]
+}
