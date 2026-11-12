@@ -1,3 +1,18 @@
+<!-- GABRIEL_KIT_CYBERPUNK_V1 -->
+<div align="center">
+
+<img src="assets/readme-cyber.svg" alt="Banner RUPTURA-ECOS-DO-VAZIO" width="100%" />
+
+<br/>
+
+**RPG em Java e LibGDX com combate por turnos, exploração e decisões narrativas.**
+
+<a href="https://github.com/gabriel31249090/RUPTURA-ECOS-DO-VAZIO">📦 Repositório</a>
+
+</div>
+
+---
+
 # RUPTURA: ECOS DO VAZIO
 
 RPG tático isométrico original em Java e LibGDX. **Versão 0.1.0: O Primeiro Eco**, um capítulo curto com começo, dois combates, escolha narrativa, encerramento e progresso local. Interface e diálogos em português brasileiro.
